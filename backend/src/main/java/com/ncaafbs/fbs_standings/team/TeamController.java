@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping(path = "api/v1/team")
+@RequestMapping(path = "/api/v1/team")
+@CrossOrigin(origins = "http://localhost:3000")
 public class TeamController {
     private final TeamService teamService;
 
