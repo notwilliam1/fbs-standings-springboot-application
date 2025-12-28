@@ -38,6 +38,7 @@ frontend/fbs-standings-v1/.pnp
 frontend/fbs-standings-v1/.pnp.js
 frontend/fbs-standings-v1/build/
 frontend/fbs-standings-v1/coverage/
+frontend/fbs-standings-v1/README.md
 
 # Frontend environment files
 frontend/fbs-standings-v1/.env
