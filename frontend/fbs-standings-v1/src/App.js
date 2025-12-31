@@ -1,6 +1,8 @@
 import './App.css';
 import api from './api/axiosConfig';
 import { useState, useEffect, use } from 'react';
+import Layout from './components/Layout';
+import {Routes, Route} from 'react-router-dom';
 
 function App() {
 
@@ -9,8 +11,6 @@ function App() {
   const getTeams = async () => {
     try {
       const response =  await api.get("/api/v1/team");
-
-      console.log("Response data:", response.data);
 
       setTeams(response.data);
 
