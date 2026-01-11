@@ -1,10 +1,9 @@
 import React from "react"
+import Hero from '../hero/hero';
 
 const Home = ({teams}) => {
   return (
-    <div>
-      Welcome to the FBS Standings Application!
-    </div>
+    <Hero teams={teams} />
   )
 }
 
