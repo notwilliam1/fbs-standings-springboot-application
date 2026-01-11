@@ -14,7 +14,7 @@ const Hero = ({ teams }) => {
                                 <div className = 'team-card'>
                                     <div className = 'team-details'>
                                         <div className = 'team-logo'>
-                                            <img src={team.logoUrl} alt={team.name} />
+                                            <img src={team.logoUrl} alt={`${team.name} logo`} />
                                         </div>
                                         <div className = 'team-name'>
                                             <h4>{team.name}</h4>
