@@ -21,45 +21,6 @@ This project consists of a React-based frontend and a Spring Boot backend that w
 - Material UI components
 - Bootstrap for responsive design
 
-## Project Structure
-
-```
-fbs-standings/
-├── backend/
-│   ├── src/
-│   │   ├── main/
-│   │   │   ├── java/
-│   │   │   │   └── com/ncaafbs/fbs_standings/
-│   │   │   │       ├── FbSstandingsApplication.java
-│   │   │   │       └── team/
-│   │   │   │           ├── Team.java
-│   │   │   │           ├── TeamController.java
-│   │   │   │           ├── TeamRepository.java
-│   │   │   │           └── TeamService.java
-│   │   │   └── resources/
-│   │   │       └── application.properties
-│   │   └── test/
-│   └── pom.xml
-│
-├── frontend/
-│   └── fbs-standings-v1/
-│       ├── public/
-│       ├── src/
-│       │   ├── components/
-│       │   │   ├── Layout.js
-│       │   │   ├── Navigation.js
-│       │   │   ├── standings/
-│       │   │   │   ├── Standings.js
-│       │   │   │   └── Standings.css
-│       │   │   └── home/
-│       │   │       └── Home.js
-│       │   ├── api/
-│       │   │   └── axiosConfig.js
-│       │   ├── App.js
-│       │   └── index.js
-│       └── package.json
-```
-
 ## Features
 
 ### Backend Features
