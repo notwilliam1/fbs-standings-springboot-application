@@ -29,8 +29,15 @@ backend/build/
 !backend/**/src/main/**/build/
 !backend/**/src/test/**/build/
 
-### Backend Resources ###
+### Backend Resources - SENSITIVE FILES ###
 backend/src/main/resources/application.properties
+backend/src/main/resources/application-*.properties
+backend/src/main/resources/application.yml
+backend/src/main/resources/application-*.yml
+
+### Backend Properties Examples ###
+!backend/src/main/resources/application.properties.example
+!backend/src/main/resources/application.example.yml
 
 ### Frontend - React ###
 frontend/fbs-standings-v1/node_modules/
@@ -87,3 +94,12 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 pnpm-debug.log*
+
+### Sensitive Files ###
+*.key
+*.pem
+*.p12
+*.jks
+*.keystore
+secrets/
+config/secrets/
