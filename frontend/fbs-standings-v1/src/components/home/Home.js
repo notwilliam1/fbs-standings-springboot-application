@@ -1,9 +1,9 @@
 import React from "react"
-import Hero from '../hero/Hero';
+import Standings from '../standings/Standings';
 
 const Home = ({teams}) => {
   return (
-    <Hero teams={teams} />
+    <Standings teams={teams} />
   )
 }
 
