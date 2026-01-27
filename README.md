@@ -48,70 +48,6 @@ This project consists of a React-based frontend and a Spring Boot backend that w
   - Current winning/losing streak
 - Modal based team editing interface
 
-## Getting Started
-
-### Prerequisites
-- Java JDK 11 or higher
-- Maven
-- Node.js and npm
-- PostgreSQL database
-
-### Backend Setup
-
-1. Navigate to the backend directory:
-   ```bash
-   cd backend
-   ```
-
-2. Configure the database connection in `src/main/resources/application.properties`
-
-3. Build and run the Spring Boot application:
-   ```bash
-   mvn clean install
-   mvn spring-boot:run
-   ```
-
-The backend will start on `http://localhost:8080`
-
-### Frontend Setup
-
-1. Navigate to the frontend directory:
-   ```bash
-   cd frontend/fbs-standings-v1
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Start the development server:
-   ```bash
-   npm start
-   ```
-
-The frontend will open at `http://localhost:3000`
-
-## API Endpoints
-
-The backend provides the following REST endpoints:
-
-- `GET /api/v1/team` - Get all teams
-- `GET /api/v1/team?conference=CONFERENCE_NAME` - Get teams by conference
-- `GET /api/v1/team?name=TEAM_NAME` - Get teams by name
-- `POST /api/v1/team` - Create a new team
-- `PUT /api/v1/team` - Update an existing team
-- `DELETE /api/v1/team/{teamName}` - Delete a team
-
-## How to Use
-
-1. Start both the backend and frontend applications
-2. The homepage displays all FBS teams with their current standings
-3. Use the Conference dropdown to filter teams by their conference
-4. Use the Sort dropdown to arrange teams by different statistics
-5. Click the Edit button on any team card to modify team information
-6. The changes are saved to the database and reflected immediately
-
 ## Data Model
 
 ### Team Entity
@@ -129,12 +65,6 @@ The Team entity contains the following fields:
 - `overall_home` - Home record (format: W-L)
 - `overall_away` - Away record (format: W-L)
 - `overall_streak` - Current winning or losing streak
-
-## Development Notes
-
-The frontend communicates with the backend through Axios HTTP requests. CORS is configured to allow requests from localhost:3000 during development. The application uses React hooks for state management and follows component-based architecture principles.
-
-The backend implements a service layer pattern, with the TeamService handling business logic and the TeamRepository managing database operations through Spring Data JPA.
 
 ## Future Enhancements
 
